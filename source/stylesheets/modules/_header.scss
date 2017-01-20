@@ -94,7 +94,7 @@ $active-nav-color: #1d8feb;
 
 .header__brand {
   font-size: 30px;
-  
+
   // Give brand focus outline on mobile
   &:after {
     content: ".";
@@ -155,7 +155,7 @@ $active-nav-color: #1d8feb;
     display: inherit;
     float: none;
     clear: none;
-    padding-left: 5px;
+    // padding-left: 5px;
   }
 
   .phase-banner {
