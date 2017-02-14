@@ -32,7 +32,7 @@ cfLogin() {
     # cf login -a "$CF_API" -u "$CF_USER" <<<"$CF_PASS"
   fi
 }
-
+bundle install
 bundle exec middleman build
 cfLogin
 cf push -f manifest.yml
