@@ -22,3 +22,7 @@
 
 # PaaS authentication file
 Staticfile.auth
+
+# Local bundler gems
+/.gems
+/.gem-bin
