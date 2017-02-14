@@ -35,4 +35,4 @@ cfLogin() {
 
 cfLogin
 bundle exec middleman build
-cf push
+cf push -f manifest.yml
