@@ -5,6 +5,9 @@ set -o pipefail
 
 cd "$(dirname "$0")"
 
+BASEDIR=$(pwd)
+
+
 cfLogin() {
   if [ -z "${CF_USER:-}" ]; then
     echo "Using cached credentials in ${CF_HOME:-home directory}" >&2
