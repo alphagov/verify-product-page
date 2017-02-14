@@ -4,9 +4,7 @@ set -eu
 set -o pipefail
 
 cd "$(dirname "$0")"
-
 BASEDIR=$(pwd)
-
 
 cfLogin() {
   if [ -z "${CF_USER:-}" ]; then
@@ -20,6 +18,7 @@ cfLogin() {
     # CloudFoundry will cache credentials in ~/.cf/config.json by default.
     # Create a dedicated work area to avoid contaminating the user's credential cache
     export CF_HOME="$BASEDIR"/work
+    rm -rf "$CF_HOME"
     mkdir -p "$CF_HOME"
 
     echo "Authenticating to CloudFoundry at '$CF_API' ($CF_ORG/$CF_SPACE) as '$CF_USER'" >&2
@@ -33,6 +32,6 @@ cfLogin() {
   fi
 }
 
-bundle exec middleman build
 cfLogin
 cf push -f manifest.yml
+cf logout || :
