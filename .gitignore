@@ -26,3 +26,6 @@ Staticfile.auth
 # Local bundler gems
 /.gems
 /.gem-bin
+
+# npm detritus
+/node_modules
