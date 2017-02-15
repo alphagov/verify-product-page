@@ -7,6 +7,7 @@ cd "$(dirname "$0")"
 export PATH=.gem-bin:node_modules/.bin:$PATH
 
 # Horrid hack because node binary on Ubuntu is 'nodejs' not 'node'
+mkdir -p node_modules/.bin/node
 if command -v nodejs; then
   ln -sf "$(command -v nodejs)" node_modules/.bin/node
 else
