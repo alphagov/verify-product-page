@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 error() {
   echo " ! $1"
