@@ -33,5 +33,6 @@ cfLogin() {
 }
 
 cfLogin
+sleep 240
 cf push -f manifest.yml
 cf logout || :
