@@ -8,5 +8,5 @@ cd "$(dirname "$0")"
 export CI
 
 ./build.sh
-CF_PASS=$CF_PASS CF_USER=$CF_USER ./deploy-to-paas.sh
+./deploy-to-paas.sh
 
