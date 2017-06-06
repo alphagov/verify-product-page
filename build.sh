@@ -13,8 +13,11 @@ if command -v nodejs; then
   ln -sf "$(command -v nodejs)" node_modules/.bin/node
 fi
 
+ruby --version
 bundle install --path=.gems --binstubs=.gem-bin
+ruby --version
 npm install bower
+ruby --version
 bower install
-
+ruby --version
 bundle exec middleman build
