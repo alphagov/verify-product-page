@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 cd "$(dirname "$0")"
 
@@ -8,3 +9,4 @@ export CI
 
 ./build.sh
 ./deploy-to-paas.sh
+

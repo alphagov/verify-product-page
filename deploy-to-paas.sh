@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -eux
 set -o pipefail
 
 cd "$(dirname "$0")"
@@ -33,5 +33,6 @@ cfLogin() {
 }
 
 cfLogin
+sleep 240
 cf push -f manifest.yml
 cf logout || :
