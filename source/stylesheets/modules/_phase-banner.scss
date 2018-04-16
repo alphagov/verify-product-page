@@ -1,10 +1,12 @@
-// Phase Banner Component
-//
-// Example Usage:
-//
-// <span class="header__title">
-//   My Product <span class="phase-banner">Beta</span>
-// </span>
+/**
+ * Phase Banner Component
+ *
+ * Example Usage:
+ *
+ * <span class="header__title">
+ *   My Product <span class="phase-banner">Beta</span>
+ * </span>
+ */
 
 .phase-banner {
   @include bold-14;
@@ -14,6 +16,6 @@
   vertical-align: middle;
 
   @include screen {
-    background: $govuk-blue;
+    background: #005EA5;
   }
 }

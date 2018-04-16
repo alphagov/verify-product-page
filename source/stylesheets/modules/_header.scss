@@ -1,41 +1,42 @@
-// Header Component
-//
-// Based on the existing GOV.UK header in GOV.UK Template, with an 'inline'
-// product name and hopefully improved mobile behaviour
-//
-// Notes:
-//
-// - Make sure you include header.js in your application. This will update
-//   the aria-expanded and aria-hidden attributes on the toggle and the nav
-//   respectively so that screen readers know what's happening.
-// - Link the current page to the same place as your skip link (e.g. #main) –
-//   this means that it is included by screen readers but is referred to as a
-//   'same page' link, and clicking it does not reload the page.
-//
-// Example Usage:
-//
-// <header class="header">
-//   <div class="header__container">
-//     <div class="header__brand">
-//       <a href="/">
-//         <span class="header__title">My Product Page</span>
-//       </a>
-//     </div>
-//
-//     <div data-module="navigation">
-//       <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation">
-//         Menu
-//       </button>
-//
-//       <nav id="navigation" class="header__navigation" aria-label="Top Level Navigation" aria-hidden="true">
-//         <ul>
-//           <li class="active"><a href="#main">Active Page</a></li>
-//           <li><a href="/other.html">Other Page</a></li>
-//         </ul>
-//       </nav>
-//     </div>
-//   </div>
-// </header>
+/**
+ * Header Component
+ *
+ * Based on the existing GOV.UK header in GOV.UK Template, with an 'inline'
+ * product name and hopefully improved mobile behaviour
+ *
+ * Notes:
+ *
+ * - Make sure you include header.js in your application. This will update
+ *   the aria-expanded and aria-hidden attributes on the toggle and the nav
+ *   respectively so that screen readers know what's happening.
+ * - Link the current page to the same place as your skip link (e.g. #main) –
+ *   this means that it is included by screen readers but is referred to as a
+ *   'same page' link, and clicking it does not reload the page.
+ *
+ * Example Usage:
+ *
+ * <header class="header">
+ *   <div class="header__container">
+ *     <div class="header__brand">
+ *       <a href="/">
+ *         <span class="header__title">My Product Page</span>
+ *       </a>
+ *     </div>
+ *
+ *     <input class="header__navigation-toggle-checkbox" type="checkbox" id="show-menu" aria-controls="navigation" aria-expanded="false" />
+ *     <label class="header__navigation-toggle" for="show-menu">
+ *       Menu
+ *     </label>
+ *
+ *     <nav id="navigation" class="header__navigation" aria-label="Top Level Navigation" aria-hidden="true">
+ *       <ul>
+ *         <li class="active"><a href="#main">Active Page</a></li>
+ *         <li><a href="/other.html">Other Page</a></li>
+ *       </ul>
+ *     </nav>
+ *   </div>
+ * </header>
+ */
 
 $active-nav-color: #1d8feb;
 
@@ -54,7 +55,7 @@ $active-nav-color: #1d8feb;
   @extend %contain-floats;
   zoom: 1;
 
-  padding: 9px 0 6px;
+  padding: 8px 0;
 
   @include screen {
     border-bottom: 10px solid $mainstream-brand;
@@ -102,8 +103,7 @@ $active-nav-color: #1d8feb;
     visibility: hidden;
   }
 
-  a:link,
-  a:visited {
+  a:link, a:visited {
     text-decoration: none;
   }
 
@@ -116,8 +116,7 @@ $active-nav-color: #1d8feb;
   }
 
   @include screen {
-    a:link,
-    a:visited {
+    a:link, a:visited {
       color: $white;
     }
 
@@ -140,8 +139,7 @@ $active-nav-color: #1d8feb;
   }
 
   @include print {
-    a:link,
-    a:visited {
+    a:link, a:visited {
       color: $black;
     }
   }
@@ -157,6 +155,7 @@ $active-nav-color: #1d8feb;
     display: inherit;
     float: none;
     clear: none;
+    // padding-left: 5px;
   }
 
   .phase-banner {
@@ -177,30 +176,27 @@ $active-nav-color: #1d8feb;
       $font-weight: 700
     );
 
+    display: none;
     clear: both;
 
     padding-top: 10px;
 
-    a:link,
-    a:visited {
+    a:link, a:visited {
       color: $white;
       text-decoration: none;
       padding: 8px 0;
       display: inline-block;
     }
 
-    .active a:link,
-    .active a:visited {
+    .active a:link, .active a:visited {
       color: $active-nav-color;
     }
 
-    a:focus,
-    .active a:focus {
+    a:focus, .active a:focus {
       color: $black;
     }
 
-    a:hover,
-    a:active {
+    a:hover, a:active {
       text-decoration: underline;
     }
 
@@ -222,8 +218,7 @@ $active-nav-color: #1d8feb;
       border-top: none;
       float: right;
 
-      a:link,
-      a:visited {
+      a:link, a:visited {
         padding: 0;
       }
 
@@ -245,51 +240,50 @@ $active-nav-color: #1d8feb;
 }
 
 .header__navigation-toggle {
-  display: none;
+  float: right;
+  color: $white;
+  text-decoration: none;
+  border: 1px solid $grey-1;
+  border-radius: 3px;
+  padding: 2px 6px 1px;
+  font-size: 80%;
+  font-weight: bold;
+
+  input {
+    display: none;
+  }
+
+  @include media(tablet) {
+    display: none;
+  }
+
+  &:after {
+    display: inline-block;
+    font-size: 8px;
+    height: 8px;
+    padding-left: 5px;
+    vertical-align: middle;
+    content: " \25BC";
+  }
 }
 
-.js {
-  .header__navigation {
+.header__navigation-toggle-checkbox {
+  position: absolute;
+  left: -9999em;
+
+  @include media(tablet) {
     display: none;
-
-    @include media(tablet) {
-      display: block;
-    }
   }
+}
 
-  .header__navigation-toggle {
-    display: block;
-    float: right;
-    color: $white;
-    background: transparent;
-    border: 1px solid $grey-1;
-    border-radius: 3px;
-    padding: 2px 6px 1px;
-    font-size: 80%;
-    font-weight: bold;
+.header__navigation-toggle-checkbox:focus ~ .header__navigation-toggle {
+  outline: 3px solid $focus-colour;
+}
 
-    input {
-      display: none;
-    }
+.header__navigation-toggle-checkbox:checked ~ .header__navigation-toggle:after {
+  content: "\25B2";
+}
 
-    @include media(tablet) {
-      display: none;
-    }
-
-    &:after {
-      display: inline-block;
-      font-size: 8px;
-      padding-left: 5px;
-      vertical-align: middle;
-      content: " \25BC";
-    }
-  }
-
-  &.nav-open .header__navigation-toggle:after {
-    content: "\25B2";
-  }
-
-  &.nav-open .header__navigation {
-    display: block;
-  }
+.header__navigation-toggle-checkbox:checked ~ .header__navigation {
+  display: block;
 }
