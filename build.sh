@@ -4,7 +4,7 @@ set -e
 
 cd "$(dirname "$0")"
 
-export PATH=.gem-bin:node_modules/.bin:/usr/bin:$PATH
+#export PATH=.gem-bin:node_modules/.bin:/usr/bin:$PATH
 
 # Horrid hack because node binary on Ubuntu is 'nodejs' not 'node'
 rm -rf node_modules/.bin/node
