@@ -13,15 +13,13 @@
 
 @import "govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
 
-$toolkit-font-stack: $helvetica-regular;
-$toolkit-font-stack-tabular: $helvetica-regular;
-
-@import "govuk_elements/public/sass/elements/helpers";
-@import "govuk_elements/public/sass/elements/buttons";
-@import "govuk_elements/public/sass/elements/elements-typography";
-@import "govuk_elements/public/sass/elements/forms";
-@import "govuk_elements/public/sass/elements/layout";
-@import "govuk_elements/public/sass/elements/panels";
+@import "govuk-elements-sass/public/sass/elements/helpers";
+@import "govuk-elements-sass/public/sass/elements/buttons";
+@import "govuk-elements-sass/public/sass/elements/elements-typography";
+@import "govuk-elements-sass/public/sass/elements/forms";
+@import "govuk-elements-sass/public/sass/elements/layout";
+@import "govuk-elements-sass/public/sass/elements/lists";
+@import "govuk-elements-sass/public/sass/elements/panels";
 
 @import "govuk_template/source/assets/stylesheets/styleguide/colours";
 @import "govuk_template/source/assets/stylesheets/accessibility";
@@ -43,27 +41,21 @@ $toolkit-font-stack-tabular: $helvetica-regular;
 @import "modules/responsive-embed";
 @import "modules/skip-link";
 @import "modules/sub-navigation";
+@import 'modules/footer-categories';
 
-html, body {
+html,
+body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   @include core-19;
 }
 
-html, body, div, p, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
+// scss-lint:disable IdSelector
 #main {
   display: block;
-  margin-bottom: $gutter * 3;
+  margin-bottom: $gutter * 1;
 }
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: $gutter-half 0;
-}
+// scss-lint:enable IdSelector
 
 .container {
   @extend %site-width-container;
@@ -84,3 +76,74 @@ a:hover {
 a:active {
   color: $link-active-colour;
 }
+
+.services-link {
+  clear: both;
+  padding-top: 30px;
+}
+
+.lede{
+  		@include core-24;
+        // margin-bottom: 30px;
+	}
+
+.lede.list{
+	margin-bottom: 2em;
+	li{
+		font-size: 1em;
+	}
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links {
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+
+.logos {
+  border-left-style: solid;
+  border-left-width: 3px;
+  margin-bottom: 30px;
+
+  .logos-logo {
+    display:block;
+    height: 50px;
+    background-image: url(https://assets.publishing.service.gov.uk/government/assets/crests/org_crest_27px_x2-3eb6258ba699c8ae2c3cf370e8a4422f37bdae95ae084a99115841a8bf0543a7.png);
+    background-size: auto 40px;
+    background-repeat: no-repeat;
+  }
+
+  .logos-text {
+    font-size: 0.8em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1em;
+  }
+}
+
+.logos-defra {
+  border-color: #00a33b;
+}
+
+.logos-dvla {
+  border-color: #006c56;
+}
+
+.logos-dwp {
+  border-color: #00beb7;
+}
+
+.logos-hmrc {
+  border-color: #009390;
+
+  .logos-logo {
+    background-image: url(https://assets.publishing.service.gov.uk/government/assets/crests/hmrc_crest_27px_x2-50c5ae1eac742b467695f5889f93024627e14f1c03a39db7a8e55edfe5d4417a.png);
+  }
+}
+
+.lead-in { margin-bottom: 0; }
+
+.lead-in-bold { font-weight: bold; }
