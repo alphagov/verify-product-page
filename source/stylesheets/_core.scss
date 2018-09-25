@@ -57,10 +57,6 @@ body {
 }
 // scss-lint:enable IdSelector
 
-.container {
-  @extend %site-width-container;
-}
-
 a:link {
   color: $link-colour;
 }
@@ -187,6 +183,10 @@ ul {
   .org-logo__crest--hmrc {
     background: url("https://assets.publishing.service.gov.uk/government/assets/crests/hmrc_crest_27px_x2-50c5ae1eac742b467695f5889f93024627e14f1c03a39db7a8e55edfe5d4417a.png") no-repeat 6px 0;
     background-size: auto 26px;
+  }
+
+  .column-half.org__margin {
+    width: 50%;
   }
 
 }
