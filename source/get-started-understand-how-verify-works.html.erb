@@ -1,5 +1,5 @@
 ---
-title: Get Started
+title: How GOV.UK Verify works
 ---
 
 <nav class="breadcrumbs" aria-label="Breadcrumbs">
@@ -22,14 +22,14 @@ title: Get Started
       <div class="column-one-third">
         <nav class="sub-navigation">
           <ol itemscope itemtype="http://schema.org/ItemList">
-            <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-              <a href="/get-started-check-verify-is-right" itemprop="item"><span itemprop="name">Check GOV.UK Verify is right for your service</span></a>
-            </li>
             <li class="sub-navigation__item sub-navigation__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-              <a href="/get-started-understand-how-verify-works" itemprop="item"><span itemprop="name">Understand how GOV.UK Verify works</span></a>
+              <a href="/get-started-understand-how-verify-works" itemprop="item"><span itemprop="name">How GOV.UK Verify works</span></a>
             </li>
             <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-              <a href="/get-started-share-information" itemprop="item"><span itemprop="name">Share information with your team</span></a>
+              <a href="/get-started-check-verify-is-right" itemprop="item"><span itemprop="name">Find out if GOV.UK Verify is right for your service</span></a>
+            </li>
+            <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a href="/get-started-choose-level-of-assurance" itemprop="item"><span itemprop="name">Choose the right level of assurance</span></a>
             </li>
             <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
               <a href="/get-started-connect-your-service" itemprop="item"><span itemprop="name">Connect your service to GOV.UK Verify</span></a>
@@ -38,66 +38,42 @@ title: Get Started
         </nav>
       </div>
       <div class="column-two-thirds">
-        <h1 class="heading-xlarge">Get started</h1>
-        <h2 class="heading-large" id="understand-how-gov.uk-verify-works">Understand how GOV.UK Verify works</h2>
-        <p>GOV.UK Verify provides a ‘hub’ between services and ‘certified companies’ who can verify users' identities. Certified companies are organisations that have met government and industry standards to provide identity assurance services as part of GOV.UK Verify. These certified companies are:</p>
-        <ul class="list list-bullet">
-          <li><a href="http://www.barclays.co.uk/identity">Barclays</a></li>
-          <li><a href="https://www.citizensafe.co.uk/">CitizenSafe</a></li>
-          <li><a href="https://www.digidentity.eu/en/">Digidentity</a></li>
-          <li><a href="http://www.experian.co.uk/identity-and-fraud/govuk-verify/">Experian</a></li>
-          <li><a href="http://www.postoffice.co.uk/government-verify">Post Office</a></li>
-          <li><a href="http://www.royalmail.com/personal/identity-verification">Royal Mail</a></li>
-          <li><a href="https://secureidentity.co.uk/">SecureIdentity</a></li>
-        </ul>
-        <p>When a user tries to access your service:</p>
-        <ol class="list list-number">
-          <li>Your service sends them to the GOV.UK Verify hub.</li>
-          <li>The hub sends them to a certified company.</li>
-          <li>The certified company sends them back to the hub.</li>
-          <li>The hub sends them back to your service.</li>
-        </ol>
-        <p>This approach means:</p>
-        <ul class="list list-bullet">
-          <li>users’ data isn’t stored in one place</li>
-          <li>services don’t know which certified company the user chooses</li>
-          <li>certified companies don’t know which service the user is trying to access</li>
-        </ul>
-        <h2 class="heading-medium">What your users see</h2>
-        <ol class="list list-number">
-          <li>Users will be asked if they already have an account with one of the certified companies.</li>
-          <li>Users who already have an account just need to sign in.</li>
-          <li>Users who don’t have an account can sign up online by answering questions only they know the answers to or by scanning their identity documents, for example a passport.</li>
-          <li>Users will be sent straight back to your service.</li>
-        </ol>
-        <p><a href="https://www.signin.service.gov.uk/start">See what the GOV.UK Verify user journey looks like</a> when users view or share their driving licence information.
-        <h2 class="heading-medium">What your service receives</h2>
-        <ol class="list list-number">
-          <li>The certified company will send you the user’s name, address and date of birth.</li>
-          <li>You can match the user’s name, address and date of birth against records you already have, or create a new record to recognise your user in the future.</li>
-        </ol>
-        <h2 class="heading-medium">Which ‘level of assurance’</h2>
-        <p>If you need to match a user to a real person, GOV.UK Verify provides different ‘levels of assurance’ (LOA) that describe how confident you need to be that your user is who they say they are. The most common ones are LOA 1 and LOA 2.</p>
-        <p>The LOA 1 user journey is simpler and faster than the LOA 2 user journey but offers a lower level of certainty that a user is who they say they are. So when you decide which LOA to use, you should think about the potential risk to your service and the person the user’s claiming to be.</p>
-        <p>Different parts of your service may need a different LOA. </p>
-        <p class="lead-in lead-in-bold">LOA 1</p>
-        <p>Use LOA 1 when there wouldn’t be any serious consequences if a user impersonated someone else.</p>
-        <p>For example, if someone falsely applies for a local resident discount for a toll crossing, it wouldn’t seriously impact the real resident. The real resident can still apply for their own discount, which will overwrite the previous application.</p>
-        <p class="lead-in lead-in-bold">LOA 2</p>
-        <p>LOA 2 is usually appropriate if you’ll accept the user is who they say they are on the balance of probabilities.</p>
-        <p>LOA 2 is probably right for you if:</p>
-        <ul class="list list-bullet">
-          <li>there would be a serious consequence to a user impersonating someone else on your service</li>
-          <li>you need to be able to take users to court if they’ve been fraudulent</li>
-        </ul>
-        <p>For example, if someone falsely submits a tax return in another person's name, that person could:
-          <ul class="list list-bullet">
-          <li>get a bill for money they don’t owe</li>
-          <li>have to pay a fine</li>
-          <li>spend time sorting out the mistake</li>
-        </ul>
+        <h1 class="heading-xlarge">How GOV.UK Verify works</h1>
+        <p>
+          GOV.UK Verify works with different organisations, known as identity providers (or certified companies), to prove users’ identities.
         </p>
-        <p><a href="mailto:idasupport@digital.cabinet-office.gov.uk">Email us</a> if you need help deciding which LOA is right for you.</p>
+        <p>
+          The identity providers have met government and industry standards to provide identity assurance services as part of GOV.UK Verify. They work with GOV.UK Verify to ensure users’ data is handled securely, helping your service to meet its data protection obligations.
+        </p>
+        <p>
+          The identity providers that currently work with GOV.UK Verify are Barclays, CitizenSafe, Digidentity, Experian, Post Office, Royal Mail and SecureIdentity.
+        </p>
+        <h2 class="heading-large">How users are verified during the signup journey</h2>
+        <p>
+          When signing in to your service for the first time, users will be asked to set up an account with one of the identity providers.
+        </p>
+        <p>
+          They’ll ask the user to provide evidence and answer questions about themselves. This will be checked against different records, such as their driving licence, passport, mobile phone contract or credit reference checks.
+        </p>
+        <p>
+          <img class="content-section__image" src="images/how-verify-works.png" alt="Diagram explaining how GOV.UK Verify works">
+        </p>
+        <p>Proving users’ identities this way means the privacy of their data is protected to a high standard, because:</p>
+        <ol class="list list-bullet">
+          <li>their data is not stored in one place</li>
+          <li>your service does not know which identity provider they’ve chosen</li>
+          <li>the identity provider does not know the user is trying to use your service</li>
+        </ol>
+        <p>
+          After the user has proved their identity, your service will be sent their name, address and date of birth. You will not see any of the other information they sent the identity provider to prove their identity.
+        </p>
+        <p>
+          The user can use the account they created with an identity provider to:
+        </p>
+        <ul class="list list-bullet">
+          <li>sign back in to your service at any time</li>
+          <li>sign in to other government services that use GOV.UK Verify</li>
+        </ul>
       </div>
     </div>
   </div>
