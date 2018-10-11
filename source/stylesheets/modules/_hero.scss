@@ -79,35 +79,14 @@
     }
   }
 
-
-  &__inline-image {
-    text-align: center;
-
-    @include media(tablet) {
-      display: none;
-      visibility: hidden;
-    }
-
-    img {
-      width: 100%;
-      max-width: 320px;
-    }
-  }
-
   .screenshot {
     width: 100%;
     margin-top: 45px;
   }
 
-
   &__aside-image {
     display: none;
     visibility: hidden;
-
-    @include media(tablet) {
-      display: block;
-      visibility: visible;
-    }
 
     img {
       max-width: 100%;
@@ -119,9 +98,8 @@
     @extend %grid-row;
   }
 
-  &__body,
-  &__aside-image {
-    @include grid-column(1 / 2);
+  &__body {
+    @include grid-column(1 / 1);
   }
 
   @include media(desktop) {
@@ -131,6 +109,8 @@
 
     &__aside-image {
       @include grid-column(1 / 3);
+      display: block;
+      visibility: visible;
     }
   }
 }

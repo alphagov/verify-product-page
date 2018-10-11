@@ -56,6 +56,17 @@
       padding-top: $gutter * 1.5;
     }
   }
+
+  @media only screen and (max-width: 800px) {
+
+    .column-two-thirds,
+    .column-half,
+    .column-one-half {
+      width: 100%
+    }
+
+  }
+
 }
 
 .partner-logo {
