@@ -1,6 +1,6 @@
 ---
 applications:
-- name: govuk-verify
+- name: verify-product-page
   memory: 64M
   path: ./build
   buildpack: staticfile_buildpack
