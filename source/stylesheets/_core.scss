@@ -43,6 +43,7 @@
 @import "modules/sub-navigation";
 @import 'modules/footer-categories';
 @import 'modules/task-list';
+@import 'modules/verify-journey-diagram';
 
 html,
 body {
@@ -103,6 +104,9 @@ ul {
 .lead-in { margin-bottom: 0; }
 
 .lead-in-bold { font-weight: bold; }
+
+.space-mt-30 { margin-top: 30px; }
+.space-pb-10 { padding-bottom: 10px; }
 
 // department logos (adapted from GOV.UK organisation pages)
 

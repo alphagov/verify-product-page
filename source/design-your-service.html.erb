@@ -1,0 +1,108 @@
+---
+title: Design how your service sends users to GOV.UK Verify
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">GOV.UK Verify</span></a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="connecting" itemprop="item"><span itemprop="name">Connecting to GOV.UK Verify</span></a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="#main" itemprop="item"><span itemprop="name">Design how your service sends users to GOV.UK Verify</span></a>
+    </li>
+  </ol>
+</nav>
+
+<main id="content" class="content supplementary" role="main">
+  <div class="container">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <h1 class="heading-xlarge">Design how your service sends users to GOV.UK Verify</h1>
+        <p>
+          GOV.UK Verify will be part of your service’s user journey, so you need to consider where and how you will send users to that part of the journey
+        </p>
+        <p>
+          See all the steps involved in the GOV.UK Verify user journey for a:
+        </p>
+        <ul class="list list-bullet">
+          <li><a href="user-journey-loa1">LOA 1 service</a></li>
+          <li><a href="user-journey-loa2">LOA 2 service</a></li>
+        </ul>
+        <h2 class="heading-large">Where to put GOV.UK Verify in your user journey</h2>
+        <p>
+          Your service should send users to GOV.UK Verify at the point you need to check their identity. For most services, this will be at the start of the journey, but some services may allow users to enter some information first, for example to confirm their eligibility.
+        </p>
+        <h3 class="heading-medium">Using GOV.UK Verify at the start of the service</h3>
+        <p>
+          <img class="content-section__image" src="/images/where-to-put-verify-start.png" alt="Image of service screens with Verify near the start of the user journey">
+        </p>
+        <p>
+          Use GOV.UK Verify at the start of your service when:
+        </p>
+        <ul class="list list-bullet">
+          <li>your service contains sensitive data that should only be visible to a verified user</li>
+          <li>you want the user’s name, date of birth and address (entered during the verification process) to be passed to the service without the user needing to submit it a second time</li>
+          <li>you want users to be able to save their progress and return later</li>
+          <li>you want to filter out users who are unable to verify their identity with GOV.UK Verify so they can be directed to another way of using your service</li>
+        </ul>
+        <h3 class="heading-medium">Using GOV.UK Verify later in the service</h3>
+        <p>
+          Some services put GOV.UK Verify later in their user journey. This means users can complete as much of your service as possible before they need to verify their identity.
+        </p>
+        <p>
+          <img class="content-section__image" src="/images/where-to-put-verify-end.png" alt="Image of service screens with Verify near the end of the user journey">
+        </p>
+        <p>
+          Use GOV.UK Verify later in the service when:
+        </p>
+        <ul class="list list-bullet">
+          <li>you want to check users’ eligibility to use a service before checking their identity</li>
+          <li>your service has other ways for users to verify their identity, such as face-to-face in a government office – they can complete parts of the service online before finishing the later stages somewhere else</li>
+        </ul>
+        <h2 class="heading-large">How to send users to GOV.UK Verify from your service</h2>
+        <p>
+          You should let your users know they’re leaving your service before you send them to GOV.UK Verify. GDS has created different design patterns to help you do this.
+        </p>
+        <h3 class="heading-medium">If users can only sign in to your service with GOV.UK Verify</h3>
+        <p>
+          Use the single sign on pattern if there’s only one way to use your service online.
+        </p>
+        <p>
+          <img class="content-section__image" src="/images/?.png" alt="Screenshot of the single sign on pattern">
+        </p>
+        <h3 class="heading-medium">If users can sign in to your service in more than one way</h3>
+        <p>
+          Use the multiple sign in page pattern if there’s more than one way for users to sign in to your service. For example, users can sign in to some HM Revenue and Customs services with either GOV.UK Verify or Government Gateway. This is only for existing services that already use Government Gateway.
+        </p>
+        <p>
+          <img class="content-section__image" src="/images/?.png" alt="Screenshot of the multiple sign in pattern">
+        </p>
+        <p>
+          You can also use the create an account pattern to show new users the different ways to use your service.
+        </p>
+        <p>
+          <img class="content-section__image" src="/images/?.png" alt="Screenshot of the create an account pattern">
+        </p>
+        <h3 class="heading-medium">If a user cannot be verified</h3>
+        <p>
+          GOV.UK Verify will show any users who cannot be verified the other ways they can use your service, for example by phone or by post.
+        </p>
+        <p>
+          See an example of what GOV.UK Verify shows a user who cannot be verified.
+        </p>
+        <p>
+          <img class="content-section__image" src="/images/?.png" alt="Screenshot of the page users see when they cannot be verified">
+        </p>
+        <p class="space-mt-30">
+          <a href="connecting">Return to overview</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
