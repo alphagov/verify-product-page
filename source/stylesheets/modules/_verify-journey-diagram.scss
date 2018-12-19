@@ -11,8 +11,13 @@
       margin-left: 20px;
     }
 
-    h2 {
+    h2, p {
       max-width: 18em;
+
+      @media screen and (max-width: 600px) {
+        max-width: 10em;
+      }
+
     }
 
     li {
@@ -25,7 +30,7 @@
       height: 140px;
       box-sizing: border-box;
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 920px) {
         width: 120px;
         padding: 10px 5px 0;
         height: auto;
@@ -60,15 +65,20 @@
       left: 550px;
       padding-top: 20px;
 
+      li:before {
+        counter-increment: section;
+        content: counters(section, ".") " ";
+      }
+
+      @media screen and (max-width: 920px) {
+        left: 400px;
+      }
+
       @media screen and (max-width: 600px) {
         top: 30px;
         left: 220px;
       }
 
-      li:before {
-        counter-increment: section;
-        content: counters(section, ".") " ";
-      }
     }
 
     ol:before {
@@ -80,6 +90,11 @@
       background-color: #bfc1c3;
       top: -20px;
       left: -360px;
+
+      @media screen and (max-width: 920px) {
+        width: 200px;
+        left: -230px;
+      }
 
       @media screen and (max-width: 600px) {
         width: 100px;
