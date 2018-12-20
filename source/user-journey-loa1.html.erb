@@ -1,0 +1,158 @@
+---
+title: How the LOA 1 user journey works
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="/" itemprop="item"><span itemprop="name">GOV.UK Verify</span></a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="connecting" itemprop="item"><span itemprop="name">Connecting to GOV.UK Verify</span></a>
+    </li>
+    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="connecting" itemprop="item"><span itemprop="name">Design how your service sends users to GOV.UK Verify</span></a>
+    </li>
+    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      <a href="#main" itemprop="item"><span itemprop="name">How the LOA 1 user journey works</span></a>
+    </li>
+  </ol>
+</nav>
+
+<main id="content" class="content supplementary" role="main">
+  <div class="container">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <h1 class="heading-xlarge">
+          How the LOA 1 user journey works
+        </h1>
+        <p>
+          This is a typical user journey for a level of assurance (LOA) 1 service. It’s different to the <a href="user-journey-loa2">user journey for an LOA 2 service</a>.
+        </p>
+        <p>
+          It typically takes about 5 minutes to create a GOV.UK Verify account, and less than a minute to sign in after that point.
+        </p>
+        <p>
+          The user journey might change depending on which certified company the user chooses. Each certified company checks users’ identities differently.
+        </p>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full user-journey-diagram">
+
+        <ol class="govuk-list">
+          <div class="start"></div>
+          <h2 class="heading-medium">Your service</h2>
+          <li>
+            <p>User is asked to prove their identity to use the service</p>
+          </li>
+          <h2 class="heading-medium">GOV.UK Verify hub</h2>
+          <li>
+            <p class="blue-bg">User says if they’ve used GOV.UK Verify before</p>
+            <ol>
+              <h2 class="heading-medium">Sign in (returning user journey)</h2>
+              <p>It takes less than a minute to sign in.</p>
+              <li>
+                <p>User picks a certified company to sign in with</p>
+              </li>
+              <li class="idp">
+                <p>User signs in with username or email and password</p>
+              </li>
+              <li class="idp">
+                <p>User receives 2 factor authentication code</p>
+              </li>
+              <li class="idp">
+                <p>User enters 2 factor authentication code</p>
+              </li>
+              <li>
+                <p>User continues to use the service</p>
+              </li>
+            </ol>
+          </li>
+          <h2 class="heading-medium">Sign up (new user journey)</h2>
+          <p>It takes about 5 minutes to create an account.</p>
+          <li>
+            <p class="blue-bg">User finds out what GOV.UK Verify is</p>
+          </li>
+          <li>
+            <p class="blue-bg">User finds out about certified companies</p>
+          </li>
+          <li>
+            <p class="blue-bg">User finds out how long it will take to verify themselves and how to create an account</p>
+          </li>
+          <li>
+            <p>User chooses a certified company</p>
+          </li>
+          <li>
+            <p>User is told they need to go to the certified company’s website to create an account</p>
+          </li>
+          <h2 class="heading-medium">Certified company: create an account</h2>
+          <li class="idp">
+            <p>User creates a username or email and password</p>
+          </li>
+          <li class="idp">
+            <p>User receives a confirmation code by email</p>
+          </li>
+          <li class="idp">
+            <p>User enters confirmation code</p>
+          </li>
+          <h2 class="heading-medium">Certified company: set up 2 factor authentication</h2>
+          <li class="idp">
+            <p>User adds phone number or chooses an alternative 2 factor authentication method</p>
+          </li>
+          <li class="idp">
+            <p>User receives authentication code</p>
+          </li>
+          <li class="idp">
+            <p>User enters authentication code</p>
+          </li>
+          <h2 class="heading-medium">Certified company: add personal details</h2>
+          <li class="idp">
+            <p>User adds their name, age and gender</p>
+          </li>
+          <li class="idp">
+            <p>User adds and confirms address</p>
+          </li>
+          <li class="idp">
+            <p>User’s details are checked by the certified company</p>
+          </li>
+          <h2 class="heading-medium">Certified company: knowledge-based authentication</h2>
+          <li class="idp">
+            <p>User answers knowledge-based authentication question 1</p>
+          </li>
+          <li class="idp">
+            <p>User answers knowledge-based authentication question 2</p>
+            <ol>
+              <h2 class="heading-medium">If knowledge-based authentication is unsuccessful</h2>
+              <li>
+                <p>User is told they can’t be verified</p>
+              </li>
+              <li>
+                <p>User sees the other ways to use this service</p>
+              </li>
+            </ol>
+          </li>
+          <h2 class="heading-medium">Confirmation: user is sent back to the GOV.UK Verify hub</h2>
+          <li class="idp">
+            <p>The certified company tells the user they’ve been successfully verified</p>
+          </li>
+          <li>
+            <p class="blue-bg">GOV.UK Verify confirms that they’ve been successfully verified</p>
+          </li>
+          <h2 class="heading-medium">Your service</h2>
+          <li>
+            <p>User continues to use your service</p>
+          </li>
+        </ol>
+
+        <div class="space-mt-30">
+          <a href="design-your-service">Return to Design how your service sends users to GOV.UK Verify</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
