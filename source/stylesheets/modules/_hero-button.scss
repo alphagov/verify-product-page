@@ -57,4 +57,9 @@ a.hero-button {
   &:active {
     color: $link-active-colour;
   }
+
+  &:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 0;
+  }
 }
