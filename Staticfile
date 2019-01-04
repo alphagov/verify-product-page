@@ -1,2 +1,2 @@
-root: build
+root: source
 location_include: custom.conf

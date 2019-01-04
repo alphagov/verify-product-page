@@ -33,5 +33,6 @@ cfLogin() {
 }
 
 cfLogin
-cf push -f manifest.yml
+cf install-plugin -f blue-green-deploy
+cf bgd verify-product-page
 cf logout || :
