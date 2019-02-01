@@ -1,5 +1,9 @@
 // department logos (adapted from GOV.UK organisation pages)
 
+.grid-row.org-row {
+  margin: 0;
+}
+
 .org__margin {
   margin: 0 0 30px -15px;
 }
@@ -42,6 +46,11 @@
   background-size: auto 20px;
 }
 
+.org-logo__crest--ho {
+  background: url("https://assets.publishing.service.gov.uk/collections/crests/ho_crest_18px_x2-37e8a7b20e2d79993b80bb4e7c1965f4f50eaec9737e2333f7ad88a042aa2ed5.png") no-repeat 5px 0;
+  background-size: auto 20px;
+}
+
 .brand--department-for-environment-food-rural-affairs .brand__border-color {
   border-color: #00a33b;
 }
@@ -56,6 +65,10 @@
 
 .brand--hm-revenue-customs .brand__border-color {
     border-color: #009390;
+}
+
+.brand--home-office .brand__border-color {
+    border-color: #9325b2;
 }
 
 @media (min-width: 641px) {
@@ -77,6 +90,11 @@
 
   .org-logo__crest--hmrc {
     background: url("https://assets.publishing.service.gov.uk/government/assets/crests/hmrc_crest_27px_x2-50c5ae1eac742b467695f5889f93024627e14f1c03a39db7a8e55edfe5d4417a.png") no-repeat 6px 0;
+    background-size: auto 26px;
+  }
+
+  .org-logo__crest--ho {
+    background: url("https://assets.publishing.service.gov.uk/collections/crests/ho_crest_18px_x2-37e8a7b20e2d79993b80bb4e7c1965f4f50eaec9737e2333f7ad88a042aa2ed5.png") no-repeat 6px 0;
     background-size: auto 26px;
   }
 
