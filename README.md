@@ -1,5 +1,7 @@
 # Verify Product Page
 
+This is the source for https://www.verify.service.gov.uk/.
+
 ## Running Locally
 
 If you wish to run in your own browser, you'll need to run the
