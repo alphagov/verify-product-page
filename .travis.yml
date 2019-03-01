@@ -1,0 +1,13 @@
+language: ruby
+cache: bundler
+script: bundle exec middleman build
+deploy:
+  provider: cloudfoundry
+  api: https://api.cloud.service.gov.uk
+  username: ida-operations+paas-build-bot@digital.cabinet-office.gov.uk
+  password:
+    secure: "fill me in, please"
+  organization: govuk-verify
+  space: docs
+  on:
+    repo: alphagov/verify-product-page
