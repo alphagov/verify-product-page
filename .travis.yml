@@ -1,6 +1,6 @@
 language: ruby
 cache: bundler
-script: ./build.sh
+script: bundle exec middleman build
 deploy:
   provider: cloudfoundry
   api: https://api.cloud.service.gov.uk
