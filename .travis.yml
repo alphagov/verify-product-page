@@ -1,0 +1,13 @@
+language: ruby
+cache: bundler
+script: ./build.sh
+deploy:
+  provider: cloudfoundry
+  api: https://api.cloud.service.gov.uk
+  username: ida-operations+paas-build-bot@digital.cabinet-office.gov.uk
+  password:
+    secure: V7t7ci9OlQK5tPA0XF6HLSFlpFTdRsHPqj8AyqVYeWCAjkaoiCzmdlkebU3CH2vR7TzYhfP4g+zXfBIVKVA7iQVqdJQaSz06hkloG0fS4/In2ZT7g1C3cFJvM8MlqUVSWEhI/F52E+GECO3AQ0sNH2z+aoABToQQQLko9yy402acMIImwRB+ddg55ogHUNh8SLPRtvWzMQQTnOU1MXoJNEM5ogUV0zkWAjBO6mBMTTOf/NQGuWGckik/27whO7Gorp2E7lP/WIvXkQJ3ZKNYkjFIsxvpfdXI9pxOdczXN3LBAeqymoA0qEs099Np2FwFaZEWduMs0tf0eWbyaGZPY7r8scRJsHnz0LZcec976Rw1iH0LzDupOz6sYHhyZmsnTxiHmCMfBClWdEq/uflDk+HwVOkguvUfiBb4y/dFo46BPNPQYQIzuk37qe0u/htsXCW3w5DRpuqOKDIkUdTyPlH0oDM5woGp4FteyHelBVFv6w9wbZZkghKSWV3EOgXcmsvTSmo60wNrG1UTkHvrQb1Ce7X9e7GsgakyhasT1pRkdSP8WnfmYAjMd4sbsB9LA3/vnrPSksnPEgyJuURTg7a6ghr/qoemsGwxWzDxtwE6IIVFgqDT9P+eenHwxvcQGw8gTonAscdSUXhPgXWb6bZgyllyV4v+UVV8OyfWraU=
+  organization: govuk-verify
+  space: docs
+  on:
+    repo: alphagov/verify-product-page
