@@ -54,13 +54,7 @@ title: How GOV.UK Verify works
           </li>
         </ol>
         <p>
-          <img class="content-section__image image-border" src="/images/how-verify-works-simple.svg" alt="Diagram explaining how GOV.UK Verify works">
-        </p>
-        <p>
-          After the user has proved their identity, your service will be sent their name, address and date of birth. You will not see any of the other information they sent the identity provider to prove their identity.
-        </p>
-        <p>
-          The user can use the account they created with an identity provider to:
+          The user can use their account to:
         </p>
         <ul class="list list-bullet">
           <li>
@@ -70,6 +64,47 @@ title: How GOV.UK Verify works
             sign in to other government services that use GOV.UK Verify
           </li>
         </ul>
+        <p>
+          <img class="content-section__image image-border" src="/images/how-verify-works-simple.svg" alt="Diagram explaining how GOV.UK Verify works">
+        </p>
+        <h2 class="heading-large">
+          What data GOV.UK Verify sends your service
+        </h2>
+        <p>
+          After a user has proved their identity, your service will be sent some information about them, such as their:
+        </p>
+        <ul class="list list-bullet">
+          <li>
+            name
+          </li>
+          <li>
+            address
+          </li>
+          <li>
+            date of birth
+          </li>
+          <li>
+            unique ID - this is created by the identity provider
+          </li>
+        </ul>
+        <p>
+          You can use this information to match their identity to a record you have for them in an existing database. This means you can link the user to data that you already hold on them. 
+        </p>
+         <div class="panel panel-border-wide">
+          <h3 class="heading-small">
+            Example
+          </h3>
+          <p>
+            When a user <a href="https://www.gov.uk/view-driving-licence">views their driving licence information</a>, the Driver and Vehicle Licensing Agency (DVLA) will match their details to a record in their database of people with driving licences. 
+          </p>
+          <p>
+            By doing this they can be sure the service shows the right driving licence details for that person.
+          </p>
+        </div>
+        <p>
+          If you do not have an existing database, you can use the information provided by the identity providers to create a new database for matching identities or auditing purposes. 
+        </p>
+        <p>
         <p class="space-mt-30">
           <a href="/connecting">Return to overview</a>
         </p>
