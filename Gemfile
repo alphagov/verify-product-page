@@ -9,6 +9,10 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
+gem 'middleman'
 gem 'middleman-livereload'
-gem "middleman-sprockets"
+gem 'middleman-sprockets'
+
+# A temporary measure to enable middleman-sprockets to run until middleman-sprockets
+# updates to sassc (replacement for sass) - https://github.com/middleman/middleman-sprockets/issues/132
+gem 'sass'
