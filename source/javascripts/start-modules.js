@@ -3,5 +3,6 @@
 
 $(document).ready(function() {
   GOVUK.modules.start();
-  window.GAAP.analytics.init()
+  window.GAAP.analytics.init();
+  GOVUKFrontend.initAll();
 });
