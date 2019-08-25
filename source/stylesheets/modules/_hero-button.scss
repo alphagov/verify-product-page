@@ -42,7 +42,7 @@ a.hero-button {
   &,
   &:link,
   &:visited {
-    color: $link-colour;
+    color: $govuk-link-colour;
   }
 
   &:hover,
@@ -51,11 +51,11 @@ a.hero-button {
   }
 
   &:hover {
-    color: $link-hover-colour;
+    color: $govuk-link-hover-colour;
   }
 
   &:active {
-    color: $link-active-colour;
+    color: $govuk-link-active-colour;
   }
 
   &:focus {
