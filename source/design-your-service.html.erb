@@ -2,60 +2,60 @@
 title: Design how your service sends users to GOV.UK Verify
 ---
 
-<nav class="breadcrumbs" aria-label="Breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
-    </li>
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/" itemprop="item"><span itemprop="name">GOV.UK Verify</span></a>
-    </li>
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/connecting" itemprop="item"><span itemprop="name">Connecting to GOV.UK Verify</span></a>
-    </li>
-    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#main" itemprop="item"><span itemprop="name">Design how your service sends users to GOV.UK Verify</span></a>
-    </li>
-  </ol>
-</nav>
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/service-toolkit#components">Components</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">GOV.UK Verify</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/connecting">Connecting to GOV.UK Verify</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Design how your service sends users to GOV.UK Verify
+      </li>
+    </ol>
+  </div>
 
-<main id="content" class="content supplementary" role="main">
   <div class="container">
-    <div class="grid-row">
-      <div class="column-two-thirds">
-        <h1 class="heading-xlarge">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
           Design how your service sends users to GOV.UK Verify
         </h1>
-        <p>
+        <p class="govuk-body">
           GOV.UK Verify will be part of your service’s user journey, so you need to consider where and how you will send users to that part of the journey
         </p>
-        <p>
+        <p class="govuk-body">
           See all the steps involved in the GOV.UK Verify user journey for a:
         </p>
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>
-            <a href="/user-journey-loa1">LOA1 service</a>
+            <a href="/user-journey-loa1" class="govuk-link">LOA1 service</a>
           </li>
           <li>
-            <a href="/user-journey-loa2">LOA2 service</a>
+            <a href="/user-journey-loa2" class="govuk-link">LOA2 service</a>
             </li>
         </ul>
-        <h2 class="heading-large">
+        <h2 class="govuk-heading-l">
           Where to put GOV.UK Verify in your user journey
         </h2>
-        <p>
+        <p class="govuk-body">
           Your service should send users to GOV.UK Verify at the point you need to check their identity. For most services, this will be at the start of the journey, but some services may allow users to enter some information first, for example to confirm their eligibility.
         </p>
-        <h3 class="heading-medium">
+        <h3 class="govuk-heading-m">
           Using GOV.UK Verify at the start of the service
         </h3>
-        <p>
+        <p class="govuk-body">
           <img class="content-section__image" src="/images/where-to-put-verify-start.svg" alt="Diagram of service with GOV.UK Verify near the start of the user journey">
         </p>
-        <p>
+        <p class="govuk-body">
           Use GOV.UK Verify at the start of your service when:
         </p>
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>
             your service contains sensitive data that should only be visible to a verified user
           </li>
@@ -69,19 +69,19 @@ title: Design how your service sends users to GOV.UK Verify
             you want to filter out users who are unable to verify their identity with GOV.UK Verify so they can be directed to another way of using your service
           </li>
         </ul>
-        <h3 class="heading-medium">
+        <h3 class="govuk-heading-m">
           Using GOV.UK Verify later in the service
         </h3>
-        <p>
+        <p class="govuk-body">
           Some services put GOV.UK Verify later in their user journey. This means users can complete as much of your service as possible before they need to verify their identity.
         </p>
-        <p>
+        <p class="govuk-body">
           <img class="content-section__image" src="/images/where-to-put-verify-later.svg" alt="Diagram of service with GOV.UK Verify near the end of the user journey">
         </p>
-        <p>
+        <p class="govuk-body">
           Use GOV.UK Verify later in the service when:
         </p>
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>
             you want to check users’ eligibility to use a service before checking their identity
           </li>
@@ -89,13 +89,13 @@ title: Design how your service sends users to GOV.UK Verify
             your service has other ways for users to verify their identity, such as face-to-face in a government office – they can complete parts of the service online before finishing the later stages somewhere else
           </li>
         </ul>
-        <h2 class="heading-large">
+        <h2 class="govuk-heading-l">
           How to send users to GOV.UK Verify from your service
         </h2>
-        <p>
+        <p class="govuk-body">
           Usually, your service should send your users to the GOV.UK Verify sign-in page. This page will tell users that they can use your service with either:
         </p>
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>
             GOV.UK Verify
           </li>
@@ -103,40 +103,40 @@ title: Design how your service sends users to GOV.UK Verify
             a digital identity from another European country
           </li>
         </ul>
-        <p>
+        <p class="govuk-body">
           <img class="content-section__image image-border" src="/images/pattern-standard.png" alt="Screenshot of the GOV.UK Verify sign-in page">
         </p>
-        <h3 class="heading-medium">
+        <h3 class="govuk-heading-m">
           If your service lets users sign in another way
         </h3>
-        <p>
-          Use the <a href="https://verify-rd-patterns.cloudapps.digital/multiple-signin">multiple sign-in page pattern</a> if users can sign in to your service using something other than GOV.UK Verify or a digital identity from another European country. For example, users can sign into some HM Revenue &amp; Customs services with Government Gateway as well.
+        <p class="govuk-body">
+          Use the <a href="https://verify-rd-patterns.cloudapps.digital/multiple-signin" class="govuk-link">multiple sign-in page pattern</a> if users can sign in to your service using something other than GOV.UK Verify or a digital identity from another European country. For example, users can sign into some HM Revenue &amp; Customs services with Government Gateway as well.
         </p>
-        <p>
+        <p class="govuk-body">
           <img class="content-section__image image-border" src="/images/pattern-multiple-signin.png" alt="Screenshot of the multiple sign-in pattern">
         </p>
-        <p>
-          You can use the <a href="https://verify-rd-patterns.cloudapps.digital/create-account">create an account pattern</a> to show new users how to create accounts for the different ways they can access your service.
+        <p class="govuk-body">
+          You can use the <a href="https://verify-rd-patterns.cloudapps.digital/create-account" class="govuk-link">create an account pattern</a> to show new users how to create accounts for the different ways they can access your service.
         </p>
-        <p>
+        <p class="govuk-body">
           <img class="content-section__image image-border" src="/images/pattern-create-account.png" alt="Screenshot of the create an account pattern">
         </p>
-        <h3 class="heading-medium" id="if-a-user-cannot-be-verified">
+        <h3 class="govuk-heading-m" id="if-a-user-cannot-be-verified">
           If a user cannot be verified
         </h3>
-        <p>
+        <p class="govuk-body">
           GOV.UK Verify will show any users who cannot be verified the other ways they can use your service, for example by phone or by post.
         </p>
-        <p>
-          See an <a href="https://verify-rd-patterns.cloudapps.digital/cant-be-verified">example of what GOV.UK Verify shows a user who cannot be verified</a>.
+        <p class="govuk-body">
+          See an <a href="https://verify-rd-patterns.cloudapps.digital/cant-be-verified" class="govuk-link">example of what GOV.UK Verify shows a user who cannot be verified</a>.
         </p>
-        <p>
+        <p class="govuk-body">
           <img class="content-section__image image-border" src="/images/pattern-cant-be-verified.png" alt="Screenshot of what users see when they cannot be verified">
         </p>
-        <p class="space-mt-30">
-          <a href="/connecting">Return to overview</a>
+        <p class="govuk-body">
+          <a href="/connecting" class="govuk-link">Return to overview</a>
         </p>
       </div>
     </div>
   </div>
-</main>
+</div>
