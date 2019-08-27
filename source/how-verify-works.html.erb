@@ -2,50 +2,50 @@
 title: How GOV.UK Verify works
 ---
 
-<nav class="breadcrumbs" aria-label="Breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
-    </li>
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/" itemprop="item"><span itemprop="name">GOV.UK Verify</span></a>
-    </li>
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/connecting" itemprop="item"><span itemprop="name">Connecting to GOV.UK Verify</span></a>
-    </li>
-    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#main" itemprop="item"><span itemprop="name">How GOV.UK Verify works</span></a>
-    </li>
-  </ol>
-</nav>
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/service-toolkit#components">Components</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">GOV.UK Verify</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/connecting">Connecting to GOV.UK Verify</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        How GOV.UK Verify works
+      </li>
+    </ol>
+  </div>
 
-<main id="content" class="content supplementary" role="main">
   <div class="container">
-    <div class="grid-row">
-      <div class="column-two-thirds">
-        <h1 class="heading-xlarge">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
           How GOV.UK Verify works
         </h1>
-        <p>
+        <p class="govuk-body">
           GOV.UK Verify works with different organisations, known as identity providers (or certified companies), to prove users’ identities.
         </p>
-        <p>
+        <p class="govuk-body">
           The identity providers have met government and industry standards to provide identity assurance services as part of GOV.UK Verify. They work with GOV.UK Verify to ensure users’ data is handled securely, helping your service to meet its data protection obligations.
         </p>
-        <p>
+        <p class="govuk-body">
           The identity providers that currently work with GOV.UK Verify are Barclays, Digidentity, Experian, Post Office and SecureIdentity.
         </p>
-        <h2 class="heading-large">
+        <h2 class="govuk-heading-l">
           How users are verified during the signup journey
         </h2>
-        <p>
+        <p class="govuk-body">
           When signing in to your service for the first time, users will be asked to set up an account with one of the identity providers.
         </p>
-        <p>
+        <p class="govuk-body">
           They’ll ask the user to provide evidence and answer questions about themselves. This will be checked against different records, such as their driving licence, passport, mobile phone contract or credit reference checks.
         </p>
-        <p>Proving users’ identities this way means the privacy of their data is protected to a high standard, because:</p>
-        <ol class="list list-bullet">
+        <p class="govuk-body">Proving users’ identities this way means the privacy of their data is protected to a high standard, because:</p>
+        <ol class="govuk-list govuk-list--bullet">
           <li>
             their data is not stored in one place
           </li>
@@ -53,10 +53,10 @@ title: How GOV.UK Verify works
             your service does not know which identity provider they’ve chosen
           </li>
         </ol>
-        <p>
+        <p class="govuk-body">
           The user can use their account to:
         </p>
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>
             sign back in to your service at any time
           </li>
@@ -64,16 +64,16 @@ title: How GOV.UK Verify works
             sign in to other government services that use GOV.UK Verify
           </li>
         </ul>
-        <p>
+        <p class="govuk-body">
           <img class="content-section__image image-border" src="/images/how-verify-works-simple.svg" alt="Diagram explaining how GOV.UK Verify works">
         </p>
-        <h2 class="heading-large" id="what-verify-sends-your-service">
+        <h2 class="govuk-heading-l" id="what-verify-sends-your-service">
           What data GOV.UK Verify sends your service
         </h2>
-        <p>
+        <p class="govuk-body">
           After a user has proved their identity, your service will be sent some information about them, such as their:
         </p>
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>
             name
           </li>
@@ -87,31 +87,30 @@ title: How GOV.UK Verify works
             unique ID - this is created by the identity provider
           </li>
         </ul>
-        <p>
+        <p class="govuk-body">
           You can use this information to match their identity to a record you have for them in an existing database. This means you can link the user to data that you already hold on them.
         </p>
-         <div class="panel panel-border-wide">
-          <h3 class="heading-small">
+         <div class="govuk-inset-text">
+          <h3 class="govuk-heading-s">
             Example
           </h3>
-          <p>
-            When a user <a href="https://www.gov.uk/view-driving-licence">views their driving licence information</a>, the Driver and Vehicle Licensing Agency (DVLA) will match their details to a record in their database of people with driving licences.
+          <p class="govuk-body">
+            When a user <a href="https://www.gov.uk/view-driving-licence" class="govuk-link">views their driving licence information</a>, the Driver and Vehicle Licensing Agency (DVLA) will match their details to a record in their database of people with driving licences.
           </p>
-          <p>
+          <p class="govuk-body">
             By doing this they can be sure the service shows the right driving licence details for that person.
           </p>
         </div>
-        <p>
+        <p class="govuk-body">
           If you do not have an existing database, you can use the information provided by the identity providers to create a new database for matching identities or auditing purposes.
         </p>
-        <p>
-            Read the <a href="https://www.docs.verify.service.gov.uk/using-verify-data/#decide-how-to-use-data-from-gov-uk-verify">technical documentation</a> to find out more about the data your service gets and how to match it to existing records. 
+        <p class="govuk-body">
+            Read the <a href="https://www.docs.verify.service.gov.uk/using-verify-data/#decide-how-to-use-data-from-gov-uk-verify" class="govuk-link">technical documentation</a> to find out more about the data your service gets and how to match it to existing records. 
         </p>
-        <p>
-        <p class="space-mt-30">
-          <a href="/connecting">Return to overview</a>
+        <p class="govuk-body govuk-!-margin-top-8">
+          <a href="/connecting" class="govuk-link">Return to overview</a>
         </p>
       </div>
     </div>
   </div>
-</main>
+</div>

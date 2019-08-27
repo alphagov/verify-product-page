@@ -37,28 +37,5 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a:link {
-  color: $govuk-link-colour;
-}
+.image-border { border: 1px solid $govuk-border-colour }
 
-a:visited {
-  color: $govuk-link-visited-colour;
-}
-
-a:hover {
-  color: $govuk-link-hover-colour;
-}
-
-a:active {
-  color: $govuk-link-active-colour;
-}
-
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-// classes for custom spacing
-
-.space-mt-30 { margin-top: 30px; }
