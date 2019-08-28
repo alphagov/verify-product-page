@@ -5,6 +5,9 @@ $govuk-assets-path: "/";
 
 @import "util/printable";
 
+// Only using the relevant modules
+// For more see https://github.com/alphagov/product-page-example
+
 @import "modules/masthead";
 @import "modules/breadcrumbs";
 @import "modules/hero";
@@ -12,25 +15,6 @@ $govuk-assets-path: "/";
 @import "modules/org-logos";
 @import 'modules/task-list';
 @import 'modules/verify-journey-diagram';
-
-/* @import "modules/breadcrumbs";
-@import "modules/content-section";
-@import "modules/full-width-form";
-@import "modules/govuk-logo";
-@import "modules/header";
-@import "modules/hero";
-@import "modules/hero-alternative-action";
-@import "modules/hero-button";
-@import "modules/masthead";
-@import "modules/phase-banner";
-@import "modules/related-items";
-@import "modules/responsive-embed";
-@import "modules/skip-link";
-@import "modules/sub-navigation";
-@import 'modules/footer-categories';
-@import 'modules/task-list';
-@import 'modules/verify-journey-diagram';
-@import 'modules/org-logos'; */
 
 html,
 body {
