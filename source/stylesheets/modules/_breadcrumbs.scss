@@ -28,6 +28,12 @@
 
 .govuk-breadcrumbs {
   padding: 10px 0;
+  .govuk-breadcrumbs__list-item {
+    &:last-child a {
+      color: govuk-colour("black");
+      text-decoration: none;
+    }
+  }
   &--inverse {
     border-bottom: 1px govuk-colour("white") solid;
     border-bottom-color: rgba(govuk-colour("white"), 0.25);
@@ -47,6 +53,9 @@
         }
         &:before {
           border-color: govuk-colour("light-grey")
+        }
+        &:last-child a {
+          text-decoration: none;
         }
     }
   }
