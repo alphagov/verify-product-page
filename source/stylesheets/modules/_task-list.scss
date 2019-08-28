@@ -1,6 +1,19 @@
 .govuk-list.app-task-list {
-  li::marker {
+  counter-reset: li;
+  padding-left: 10px;
+  > li {
+    counter-increment: li;
+    padding-left: 20px;
+  }
+  > li::before {
+    content: counter(li)".";
+    display: inline-block;
+    margin-left: -30px;
+    vertical-align: top;
+    width: 25px;
     @extend %govuk-heading-m
   }
+  h2, p {
+    display: inline-block; 
+  }
 }
-
