@@ -11,8 +11,5 @@
 
 .masthead {
   background-color: govuk-colour("blue");
-  margin-top: -45px;
-  @include govuk-media-query($from: tablet) {
-    margin-top: -65px;
-  }
+  margin-top: -25px;
 }
