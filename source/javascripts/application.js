@@ -2,6 +2,6 @@
 //= require govuk-frontend/govuk/all.js
 
 document.addEventListener("DOMContentLoaded", function(){
-  window.GAAP.analytics.init();
+  window.GAAP.analytics.eventTracking.init();
   GOVUKFrontend.initAll();
 });
