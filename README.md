@@ -11,3 +11,9 @@ following commands from the root of this project:
 - `npm install` to install the frontend dependencies
 - `bundle exec middleman server` - to start middleman's built in server
 - `open http://localhost:4567` - to open the example in your browser
+
+## Development
+
+This was originally based on the [product-page-example](https://github.com/alphagov/product-page-example), 
+however it slightly diverged since that (custom styles, migration to GOV.UK Frontend),
+but it still is possible to pull in more modules from the example repo.
