@@ -11,7 +11,7 @@
 // </section>
 
 .content-section {
-  margin-top: $gutter;
+  margin-top: $govuk-gutter;
 
   &__title {
     margin-top: 0;
@@ -22,7 +22,7 @@
   }
 
   &__video {
-    border: 1px solid $grey-2;
+    border: 1px solid govuk-colour("mid-grey");
     height: 0;
     overflow: hidden;
     position: relative;
@@ -42,35 +42,24 @@
     padding: 5px 0;
 
       summary:hover {
-        background-color: $grey-3;
+        background-color: govuk-colour("dark-grey");
       }
   }
 
   &--with-top-border {
-    padding-top: $gutter;
-    border-top: 1px $grey-2 solid;
+    padding-top: $govuk-gutter;
+    border-top: 1px govuk-colour("mid-grey") solid;
   }
 
-  &--with-top-padding {
-    @include media(tablet) {
-      padding-top: $gutter * 1.5;
-    }
-  }
 
   @media only screen and (max-width: 800px) {
 
-    .column-two-thirds,
-    .column-half,
-    .column-one-half {
+    .govuk-column-two-thirds,
+    .govuk-column-half,
+    .govuk-column-one-half {
       width: 100%
     }
 
   }
 
-}
-
-.partner-logo {
-  margin-bottom: $gutter;
-  width: auto;
-  height: 4em;
 }

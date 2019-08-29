@@ -10,5 +10,6 @@
 // </div>
 
 .masthead {
-  background-color: $govuk-blue;
+  background-color: govuk-colour("blue");
+  margin-top: -25px;
 }

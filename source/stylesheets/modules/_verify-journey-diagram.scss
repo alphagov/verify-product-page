@@ -3,7 +3,7 @@
 .user-journey-diagram {
 
   ol {
-    border-left: 3px solid $grey-2;
+    border-left: 3px solid govuk-colour("mid-grey");
     padding: 30px 30px 0 30px;
     counter-reset: section;
 
@@ -22,8 +22,8 @@
 
     li {
       position: relative;
-      border: 2px solid $black;
-      border-top: 20px solid $black;
+      border: 2px solid govuk-colour("black");
+      border-top: 20px solid govuk-colour("black");
       padding: 5px;
       margin-bottom: 30px;
       width: 210px;
@@ -37,8 +37,8 @@
       }
 
       .blue-bg {
-        color: white;
-        background-color: $govuk-blue;
+        color: govuk-colour("white");
+        background-color: govuk-colour("blue");
         height: 75%;
         margin-top: -44px;
 
@@ -87,7 +87,7 @@
       position: relative;
       height: 3px;
       width: 330px;
-      background-color: #bfc1c3;
+      background-color: govuk-colour("mid-grey");
       top: -20px;
       left: -360px;
 
@@ -106,8 +106,8 @@
   }
 
   .idp {
-    border: 2px solid $grey-1;
-    border-top: 20px solid $grey-1;
+    border: 2px solid govuk-colour("dark-grey");
+    border-top: 20px solid govuk-colour("dark-grey");
   }
 
   .phone {
@@ -119,9 +119,9 @@
 
     li {
       border-radius: 8px;
-      border: 2px solid $grey-1;
-      border-top: 15px solid $grey-1;
-      border-bottom: 15px solid $grey-1;
+      border: 2px solid govuk-colour("dark-grey");
+      border-top: 15px solid govuk-colour("dark-grey");
+      border-bottom: 15px solid govuk-colour("dark-grey");
       width: 50px;
       height: 90px;
 
@@ -156,8 +156,8 @@
     top: 30px;
     left: -60px;
     font-weight: bold;
-    background-color: $white;
-    border: 3px solid $grey-2;
+    background-color: govuk-colour("white");
+    border: 3px solid govuk-colour("mid-grey");
     text-align: center;
     vertical-align: middle;
     box-sizing: border-box;
@@ -181,7 +181,7 @@
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-top: 18px solid #bfc1c3;
+    border-top: 18px solid govuk-colour("mid-grey");
     left: -44px;
     top: 18px;
   }
@@ -193,7 +193,7 @@
   .phone:after {
     width: 325px;
     height: 3px;
-    background-color: $grey-2;
+    background-color: govuk-colour("mid-grey");
     border: none;
     top: 0;
     left: -355px;

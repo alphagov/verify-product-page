@@ -1,6 +1,10 @@
 // department logos (adapted from GOV.UK organisation pages)
 
-.grid-row.org-row {
+$generic_crest: url("/images/generic_crest.png");
+$hmrc_crest: url("/images/hmrc_crest.png");
+$ho_crest: url("/images/ho_crest.png");
+
+.govuk-grid-row.org-row {
   margin: 0;
 }
 
@@ -19,7 +23,7 @@
   text-transform: none;
   text-decoration: none;
   display: block;
-  color: #0b0c0c;
+  color: govuk-colour("black");
   height: auto;
   width: auto;
   direction: ltr;
@@ -37,17 +41,17 @@
 }
 
 .org-logo__crest--single-identity {
-    background: url("https://assets.publishing.service.gov.uk/government/assets/crests/org_crest_27px_x2-3eb6258ba699c8ae2c3cf370e8a4422f37bdae95ae084a99115841a8bf0543a7.png") no-repeat 5px 0;
+    background: $generic_crest no-repeat 5px 0;
     background-size: auto 20px;
 }
 
 .org-logo__crest--hmrc {
-  background: url("https://assets.publishing.service.gov.uk/government/assets/crests/hmrc_crest_27px_x2-50c5ae1eac742b467695f5889f93024627e14f1c03a39db7a8e55edfe5d4417a.png") no-repeat 5px 0;
+  background: $hmrc_crest no-repeat 5px 0;
   background-size: auto 20px;
 }
 
 .org-logo__crest--ho {
-  background: url("https://assets.publishing.service.gov.uk/collections/crests/ho_crest_18px_x2-37e8a7b20e2d79993b80bb4e7c1965f4f50eaec9737e2333f7ad88a042aa2ed5.png") no-repeat 5px 0;
+  background: $ho_crest no-repeat 5px 0;
   background-size: auto 20px;
 }
 
@@ -84,17 +88,17 @@
   }
 
   .org-logo__crest--single-identity {
-    background: url("https://assets.publishing.service.gov.uk/government/assets/crests/org_crest_27px_x2-3eb6258ba699c8ae2c3cf370e8a4422f37bdae95ae084a99115841a8bf0543a7.png") no-repeat 6px 0;
+    background: $generic_crest no-repeat 6px 0;
     background-size: auto 26px;
   }
 
   .org-logo__crest--hmrc {
-    background: url("https://assets.publishing.service.gov.uk/government/assets/crests/hmrc_crest_27px_x2-50c5ae1eac742b467695f5889f93024627e14f1c03a39db7a8e55edfe5d4417a.png") no-repeat 6px 0;
+    background: $hmrc_crest no-repeat 6px 0;
     background-size: auto 26px;
   }
 
   .org-logo__crest--ho {
-    background: url("https://assets.publishing.service.gov.uk/collections/crests/ho_crest_18px_x2-37e8a7b20e2d79993b80bb4e7c1965f4f50eaec9737e2333f7ad88a042aa2ed5.png") no-repeat 6px 0;
+    background: $ho_crest no-repeat 6px 0;
     background-size: auto 26px;
   }
 

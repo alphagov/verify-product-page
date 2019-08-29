@@ -1,4 +1,7 @@
 //= require gaap-analytics/build/gaap-analytics.min
-//= require vendor/jquery
-//= require vendor/modernizr
-//= require start-modules
+//= require govuk-frontend/govuk/all.js
+
+document.addEventListener("DOMContentLoaded", function(){
+  window.GAAP.analytics.eventTracking.init();
+  GOVUKFrontend.initAll();
+});

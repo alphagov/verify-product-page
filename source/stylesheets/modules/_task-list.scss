@@ -1,23 +1,19 @@
-ol.task-list{
-  padding-left: 30px;
-}
-
-.task-list h2{
-  position: relative;
-  margin-top: 60px;
-}
-
-.instruction-list-item-top li{
-  position: relative;
-}
-
-.instruction-list-item-top img{
-  position: absolute;
-  left: -26px;
-  top: 4px;
-}
-
-.task-list-section-number{
-  position: absolute;
-  left: -30px;
+.govuk-list.app-task-list {
+  counter-reset: li;
+  padding-left: 10px;
+  > li {
+    counter-increment: li;
+    padding-left: 20px;
+  }
+  > li::before {
+    content: counter(li)".";
+    display: inline-block;
+    margin-left: -30px;
+    vertical-align: top;
+    width: 25px;
+    @extend %govuk-heading-m
+  }
+  h2, p {
+    display: inline-block; 
+  }
 }

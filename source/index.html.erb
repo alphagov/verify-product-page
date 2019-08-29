@@ -3,48 +3,57 @@ title: GOV.UK Verify
 ---
 
 <div class="masthead">
-  <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs" data-click-events data-click-category="Header" data-click-action="Breadcrumb clicked">
-    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-      <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Components</span></a>
-      </li>
-      <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="#main" itemprop="item"><span itemprop="name">GOV.UK Verify</span></a>
-      </li>
-    </ol>
-  </nav>
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs govuk-breadcrumbs--inverse">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/service-toolkit#components">Components</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          <a href="#main">GOV.UK Verify</a>
+        </li>
+      </ol>
+    </div>
 
-  <div class="hero hero--breaded">
-    <div class="hero__content">
-      <div class="hero__body">
-        <h1 class="hero__title">
-          Be sure your users are who they say they are
-        </h1>
-        <p class="lede">
-          GOV.UK Verify is a trusted, secure way to prove identity online. Designed to prevent identity fraud and protect users’ privacy, it’s a safe way to make sure you’re giving the right people access to your service.
-        </p>
-        <a href="/connecting" role="button" class="hero-button" data-click-events data-click-category="Hero" data-click-action="Button clicked">
-          Find out how to connect to GOV.UK Verify
-        </a>
-      </div>
-      <div class="hero__aside-image">
-        <img src="images/verify-product-image.svg" alt="Illustration of GOV.UK Verify passing secure data between a user and a government service" role="presentation">
+    <div class="hero">
+      <div class="hero__content govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="hero__body">
+            <h1 class="hero__title govuk-heading-xl">
+              Be sure your users are who they say they are
+            </h1>
+            <p class="hero__description govuk-body">
+              GOV.UK Verify is a trusted, secure way to prove identity online. Designed to prevent identity fraud and protect users’ privacy, it’s a safe way to make sure you’re giving the right people access to your service.
+            </p>
+            <a href="/connecting" role="button" draggable="false" class="hero-button govuk-button govuk-button--start" data-module="govuk-button" data-click-events data-click-category="Hero" data-click-action="Button clicked">
+              Find out how to connect to GOV.UK Verify
+              <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+                <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="govuk-grid-column-one-third">
+          <div class="hero__aside-image">
+            <img src="images/verify-product-image.svg" alt="Illustration of GOV.UK Verify passing secure data between a user and a government service" role="presentation">
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<main id="content" class="content supplementary" role="main">
-  <div class="container">
-    <div class="grid-row content-section">
-      <div class="column-two-thirds">
-        <h2 class="content-section__title heading-medium">
+<main class="govuk-main-wrapper" id="main" role="main">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row content-section">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">
           How GOV.UK Verify can help services
         </h2>
-        <p>
+        <p class="govuk-body">
           As services move online to make things simpler and faster for users, they can face an increased risk of identity fraud. Using GOV.UK Verify to prove identity online can:
         </p>
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>
             help protect services and users from identity fraud
           </li>
@@ -58,25 +67,25 @@ title: GOV.UK Verify
             replace physical signatures on legal documents
           </li>
         </ul>
-        <p>
-          <a href="/verify-right-for-your-service">Find out if GOV.UK Verify is right for your service</a>.
+        <p class="govuk-body">
+          <a href="/verify-right-for-your-service" class="govuk-link">Find out if GOV.UK Verify is right for your service</a>.
         </p>
       </div>
     </div>
 
     <div class="content-section content-section--with-top-border">
-      <div class="grid-row">
-        <div class="column-two-thirds">
-          <h2 class="content-section__title heading-medium">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">
             How GOV.UK Verify works
           </h2>
-          <p>
+          <p class="govuk-body">
             GOV.UK Verify works with different organisations, known as identity providers (or certified companies), to prove users’ identities.
           </p>
-          <p>
+          <p class="govuk-body">
             When signing into your service for the first time, users will be asked to set up an account for one of these companies. They’ll ask the user to provide evidence and answer questions about themselves.
           </p>
-          <ul class="list list-bullet">
+          <ul class="govuk-list govuk-list--bullet">
             <li>
               Identity providers check the details users provide against records held by organisations like credit agencies.
             </li>
@@ -93,26 +102,26 @@ title: GOV.UK Verify
               GOV.UK Verify continually monitors for identity fraud.
             </li>
           </ul>
-          <p>
-            Read more about <a href="/how-verify-works">how GOV.UK Verify works</a>.
+          <p class="govuk-body">
+            Read more about <a href="/how-verify-works" class="govuk-link">how GOV.UK Verify works</a>.
           </p>
           <div class="content-section__video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zmTpFl5DVSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Video: How GOV.UK Verify works" width="560" height="315" src="https://www.youtube.com/embed/zmTpFl5DVSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
 
     <div class="content-section content-section--with-top-border">
-      <div class="grid-row">
-        <div class="column-two-thirds">
-          <h2 class="content-section__title heading-medium">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">
             Secure by design
           </h2>
-          <p>
-            Working with the <a href="https://www.ncsc.gov.uk">National Cyber Security Centre</a> and the  <a href="https://www.gov.uk/government/groups/privacy-and-consumer-advisory-group">Privacy and Consumer Advisory Group</a>, the GOV.UK Verify team designed GOV.UK Verify to:
+          <p class="govuk-body">
+            Working with the <a href="https://www.ncsc.gov.uk" class="govuk-link">National Cyber Security Centre</a> and the  <a href="https://www.gov.uk/government/groups/privacy-and-consumer-advisory-group" class="govuk-link">Privacy and Consumer Advisory Group</a>, the GOV.UK Verify team designed GOV.UK Verify to:
           </p>
-          <ul class="list list-bullet">
+          <ul class="govuk-list govuk-list--bullet">
             <li>
               meet the highest anti-fraud standards
             </li>
@@ -123,71 +132,71 @@ title: GOV.UK Verify
               meet EU rules like the General Data Protection Regulation (GDPR)
             </li>
           </ul>
-          <p>
-            Read about the <a href="https://www.gov.uk/government/publications/govuk-verify-identity-assurance-principles/identity-assurance-principles">identity assurance principles</a> that GOV.UK Verify follows.
+          <p class="govuk-body">
+            Read about the <a href="https://www.gov.uk/government/publications/govuk-verify-identity-assurance-principles/identity-assurance-principles" class="govuk-link">identity assurance principles</a> that GOV.UK Verify follows.
           </p>
         </div>
       </div>
     </div>
 
     <div class="content-section content-section--with-top-border">
-      <div class="grid-row">
-        <div class="column-half">
-          <h2 class="content-section__title heading-medium">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <h2 class="govuk-heading-m">
             Supported by the people who built it
           </h2>
-          <p>
+          <p class="govuk-body">
             The GOV.UK Verify team at the Government Digital Service (GDS) gives services:
           </p>
-          <ul class="list list-bullet">
+          <ul class="govuk-list govuk-list--bullet">
             <li>
               24/7 access to support
             </li>
             <li>
-              <a href="https://www.docs.verify.service.gov.uk/#gov-uk-verify-technical-documentation">detailed technical guidance</a> to help you connect
+              <a href="https://www.docs.verify.service.gov.uk/#gov-uk-verify-technical-documentation" class="govuk-link">detailed technical guidance</a> to help you connect
             </li>
             <li>
               99.9% service uptime
             </li>
           </ul>
-          <p>
-            <a href="/support">Contact the GOV.UK Verify support team</a> if you need help or want to give feedback.
+          <p class="govuk-body">
+            <a href="/support" class="govuk-link">Contact the GOV.UK Verify support team</a> if you need help or want to give feedback.
           </p>
         </div>
-        <div class="column-half">
+        <div class="govuk-grid-column-one-half">
           <img class="content-section__image" src="images/verify-team.jpg" alt="Photograph of the GOV.UK Verify team"/>
         </div>
       </div>
     </div>
 
     <div class="content-section content-section--with-top-border">
-      <div class="grid-row">
-        <div class="column-two-thirds">
-          <h2 class="content-section__title heading-medium">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">
             Tried and trusted
           </h2>
-          <p>
+          <p class="govuk-body">
             You do not need to build your own digital identity check from scratch or go through a long procurement process.
           </p>
-          <p>
+          <p class="govuk-body">
             GOV.UK Verify has been designed and tested by GDS and it’s being used across government. More than 3 million users are using GOV.UK Verify to access <a href="https://www.gov.uk/government/publications/introducing-govuk-verify/introducing-govuk-verify#government-services">services</a> run by organisations including:
           </p>
-          <div class="grid-row org-row">
-            <div class="column-third org__margin">
+          <div class="govuk-grid-row org-row">
+            <div class="govuk-grid-column-one-third org__margin">
               <div class="org-logo brand--department-for-environment-food-rural-affairs">
                 <div class="org-logo__container org-logo__crest org-logo__crest--single-identity brand__border-color">
                   <span class="org-logo__name">Department<br>for Environment<br>Food &amp; Rural Affairs</span>
                 </div>
               </div>
             </div>
-            <div class="column-third org__margin">
+            <div class="govuk-grid-column-one-third org__margin">
               <div class="org-logo brand--department-for-work-pensions">
                 <div class="org-logo__container org-logo__crest org-logo__crest--single-identity brand__border-color">
                   <span class="org-logo__name">Department<br>for Work &amp;<br>Pensions</span>
                 </div>
               </div>
             </div>
-            <div class="column-third org__margin">
+            <div class="govuk-grid-column-one-third org__margin">
               <div class="org-logo brand--department-for-transport">
                 <div class="org-logo__container org-logo__crest org-logo__crest--single-identity brand__border-color">
                   <span class="org-logo__name">Driver &amp; Vehicle<br>Licensing<br>Agency</span>
@@ -195,15 +204,15 @@ title: GOV.UK Verify
               </div>
             </div>
           </div>
-          <div class="grid-row org-row">
-            <div class="column-third org__margin">
+          <div class="govuk-grid-row org-row">
+            <div class="govuk-grid-column-one-third org__margin">
               <div class="org-logo brand--hm-revenue-customs">
                 <div class="org-logo__container org-logo__crest org-logo__crest--hmrc brand__border-color">
                   <span class="org-logo__name">HM Revenue<br>&amp; Customs</span>
                 </div>
               </div>
             </div>
-            <div class="column-third org__margin">
+            <div class="govuk-grid-column-one-third org__margin">
               <div class="org-logo brand--home-office">
                 <div class="org-logo__container org-logo__crest org-logo__crest--ho brand__border-color">
                   <span class="org-logo__name">Home Office</span>
@@ -211,19 +220,19 @@ title: GOV.UK Verify
               </div>
             </div>
           </div>
-            <div class="panel panel-border-wide">
-              <p>
+            <div class="govuk-inset-text">
+              <p class="govuk-body">
                 “Being able to verify their identity online saves our users time and means we can start processing their application quicker.”
               </p>
-              <p>
+              <p class="govuk-body">
                 – Lisa Keenaghan, Digital Service Manager, Disclosure and Barring Service
               </p>
             </div>
-            <p>
-              <a href="mailto:idasupport@digital.cabinet-office.gov.uk">Email us</a> if you’d like to know more about using GOV.UK Verify.
+            <p class="govuk-body">
+              <a href="mailto:idasupport@digital.cabinet-office.gov.uk" class="govuk-link">Email us</a> if you’d like to know more about using GOV.UK Verify.
             </p>
           </div>
         </div>
-      </div>
     </div>
-  </main>
+  </div>
+</main>
