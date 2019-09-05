@@ -11,5 +11,8 @@
 
 .masthead {
   background-color: govuk-colour("blue");
-  margin-top: -25px;
+  margin-top: -10px;
+  &--breadcrumb {
+    margin-top: -25px;
+  }
 }
