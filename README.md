@@ -17,3 +17,7 @@ following commands from the root of this project:
 This was originally based on the [product-page-example](https://github.com/alphagov/product-page-example), 
 however it slightly diverged since that (custom styles, migration to GOV.UK Frontend),
 but it still is possible to pull in more modules from the example repo.
+
+## Deployment
+
+This app is deployed automatically from master by travis - see [.travis.yml](.travis.yml)
