@@ -29,3 +29,5 @@ Staticfile.auth
 
 # npm detritus
 /node_modules
+
+.vscode
