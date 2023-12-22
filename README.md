@@ -1,5 +1,9 @@
 # Verify Product Page
 
+> **Verify has Closed**
+>
+>This repository is out of date and has been archived
+
 This is the source for https://www.verify.service.gov.uk/.
 
 ## Running Locally
